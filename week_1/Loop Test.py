@@ -7,11 +7,15 @@ Created on Wed Aug 24 09:44:53 2022
 #% Import stuff here
 import matplotlib.pyplot as plt
 
+#%Classes
+def add(x:float,y:float) -> float:
+    return x+y
+
 #%%  imports matrix operations
 import numpy as np 
 #%% makes list of x values from 0-10 called np
-x_list= list(np.arrange(0,10))
-y_list = list(np.arrange(10,20))
+x_list= list(np.arange(0,10))
+y_list = list(np.arange(10,20))
 ##basic for Loop
 print("og method")
 for i in range(0,len(x_list)):
